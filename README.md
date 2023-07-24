@@ -47,7 +47,7 @@ Users should be able to:
 
 ## Author
 
-- LinledIn- [@youssefoubrik](https://www.linkedin.com/in/youssefoubrik/)
+- LinkedIn- [@youssefoubrik](https://www.linkedin.com/in/youssefoubrik/)
 
 ## Acknowledgments
 
