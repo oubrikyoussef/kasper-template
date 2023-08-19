@@ -2,9 +2,9 @@
 :root {
   --main-color: rgb(25, 200, 250);
   --transparent-color: rgb(15 116 143 / 70%);
-  --hover-effect-color:rgba(25,200,250,.7);
-  --sections-padding:100px;
-  --main-heading-color:#777;
+  --hover-effect-color: rgba(25, 200, 250, 0.7);
+  --sections-padding: 100px;
+  --main-heading-color: #777;
 }
 /* End Variables */
 
@@ -48,10 +48,10 @@ body {
 section {
   padding: var(--sections-padding) 0;
 }
-footer{
-  padding: calc(var(--sections-padding)/2) 0;
+footer {
+  padding: calc(var(--sections-padding) / 2) 0;
 }
-.overlay::before{
+.overlay::before {
   content: "";
   position: absolute;
   left: 0;
@@ -149,11 +149,11 @@ header nav ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
-  transition:0.3s ease-in;
+  transition: 0.3s ease-in;
   padding: 40px 10px;
   position: relative;
   z-index: 2;
-  
+  border-bottom: 1px solid transparent;
 }
 header nav ul li a:hover {
   color: var(--main-color);
@@ -178,7 +178,6 @@ header nav .toggle-menu {
   header nav .toggle-menu {
     display: block;
     cursor: pointer;
-
   }
   header nav ul {
     display: none;
@@ -278,7 +277,6 @@ header nav .toggle-menu {
     width: 100%;
     padding: 15px;
     justify-content: center;
-
   }
   .landing .text .content {
     width: 100%;
@@ -356,7 +354,7 @@ header nav .toggle-menu {
 }
 .section .text {
   background-color: var(--transparent-color);
-  padding: 50px;
+  padding: 50px 60px;
   color: #fff;
   position: relative;
   z-index: 2;
@@ -388,7 +386,7 @@ header nav .toggle-menu {
   bottom: -120px;
   left: 30px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 990px) {
   .section .text {
     width: 100%;
   }
@@ -407,7 +405,6 @@ header nav .toggle-menu {
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: center;
-
 }
 #portofolio .fields .field {
   padding: 8px 12px;
@@ -847,8 +844,8 @@ section.statistics {
   width: fit-content;
   margin: 0 auto;
 }
-#pricing .plan .features .feature:not(:last-of-type){
- border-bottom: 1px solid var(--main-color);
+#pricing .plan .features .feature:not(:last-of-type) {
+  border-bottom: 1px solid var(--main-color);
 }
 #pricing .plan .features {
   border-bottom: 1px solid var(--main-color);
@@ -864,7 +861,7 @@ section.statistics {
   color: purple;
   cursor: pointer;
   margin-bottom: 2rem;
-  transition: .3s ease-in;
+  transition: 0.3s ease-in;
 }
 #pricing button:hover {
   background-color: var(--main-color);
@@ -918,7 +915,7 @@ section.statistics {
   background-color: var(--main-color);
   cursor: pointer;
   margin: 0 auto;
-  transition: .3s;
+  transition: 0.3s;
 }
 .subscribe form input[type="submit"]:hover {
   background-color: var(--hover-effect-color);
@@ -965,18 +962,18 @@ section.statistics {
 #contact-us .content {
   display: flex;
 }
-@media screen and (max-width:768px){
-#contact-us .content {
-  flex-direction:column-reverse;
+@media screen and (max-width: 768px) {
+  #contact-us .content {
+    flex-direction: column-reverse;
+  }
+  #contact-us .content .aside {
+    margin-bottom: 1.5rem;
+  }
 }
-#contact-us .content .aside{
-  margin-bottom: 1.5rem;
-}
-}
-#contact-us .content form{
+#contact-us .content form {
   flex-basis: 70%;
 }
-.commun-style{
+.commun-style {
   display: block;
   padding: 15px;
   outline: none;
@@ -989,13 +986,13 @@ section.statistics {
   text-transform: uppercase;
   color: #fff;
   background-color: var(--main-color);
-  transition: .3s;
+  transition: 0.3s;
   border: none;
   cursor: pointer;
   margin-top: 2rem;
 }
 #contact-us form input:last-of-type:hover {
-  background-color:var(--hover-effect-color);
+  background-color: var(--hover-effect-color);
 }
 
 #contact-us form .commun-style::placeholder {
@@ -1006,95 +1003,96 @@ section.statistics {
   margin-top: 2rem;
 }
 #contact-us form textarea {
-  min-width: 100%;
-  min-height: 250px;
+  resize: none;
+  width: 100%;
+  height: 250px;
   outline: none;
   padding: 15px;
   border: 1px solid #ccc;
 }
-#contact-us .aside{
+#contact-us .aside {
   flex-basis: 25%;
 }
-#contact-us .aside h3{
+#contact-us .aside h3 {
   font-weight: normal;
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
-#contact-us .aside > div{
+#contact-us .aside > div {
   width: fit-content;
   margin: 0 auto;
 }
-#contact-us .aside .number{
- margin-bottom: 5rem;
+#contact-us .aside .number {
+  margin-bottom: 5rem;
 }
-#contact-us .aside .number a{
- text-decoration: none;
- display: block;
- color: #888;
- margin-bottom: .5rem;
+#contact-us .aside .number a {
+  text-decoration: none;
+  display: block;
+  color: #888;
+  margin-bottom: 0.5rem;
 }
-#contact-us .aside .address address{
+#contact-us .aside .address address {
   color: #888;
   line-height: 1.8;
 }
 /* End Contact Us */
 
 /* Start Footer  */
-footer{
+footer {
   background-image: url(../images/subscribe.jpg);
   background-size: cover;
   text-align: center;
   color: #fff;
   position: relative;
 }
-footer::before{
+footer::before {
   background-color: rgb(0 0 0 / 70%);
 }
-footer .container{
+footer .container {
   position: relative;
 }
-footer .container img{
+footer .container img {
   margin-bottom: 3rem;
 }
-footer .container h2{
+footer .container h2 {
   font-weight: normal;
   text-transform: uppercase;
 }
-footer .container hr{
+footer .container hr {
   width: 200px;
   margin: 1.5rem auto;
   height: 1px;
   outline: none;
 }
-footer .container .social-networks a{
- color: inherit;
- margin-left: 1rem;
- font-size: 18px;
-}
-footer .container .social-networks{
-  margin-bottom: 2.5rem;
-}
-footer .container .social-networks .facebook:hover{
-  color: #1877f2;
-  transition: .3s;
-}
-footer .container .social-networks .twitter:hover{
-  color: #1da1f2;
-  transition: .3s;
-}
-footer .container .social-networks .home:hover{
-  color: var(--main-color);
-  transition: .3s;
-}
-footer .container .social-networks .linkedin:hover{
-  color: #1da1f2;
-  transition: .3s;
-}
-footer .container p{
+footer .container .social-networks a {
+  color: inherit;
+  margin-left: 1rem;
   font-size: 18px;
 }
-footer .container p span{
+footer .container .social-networks {
+  margin-bottom: 2.5rem;
+}
+footer .container .social-networks .facebook:hover {
+  color: #1877f2;
+  transition: 0.3s;
+}
+footer .container .social-networks .twitter:hover {
+  color: #1da1f2;
+  transition: 0.3s;
+}
+footer .container .social-networks .home:hover {
+  color: var(--main-color);
+  transition: 0.3s;
+}
+footer .container .social-networks .linkedin:hover {
+  color: #1da1f2;
+  transition: 0.3s;
+}
+footer .container p {
+  font-size: 18px;
+}
+footer .container p span {
   color: var(--main-color);
   font-weight: bold;
 }
